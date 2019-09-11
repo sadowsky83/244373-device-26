@@ -12,6 +12,7 @@
 	<div class="site-wrapper">
 		<div class="content-wrapper">
 			<header class="main-header">
+				<h1 class="visibility-hidden">Онлайн магазин электронных гаджетов DEVICE. Каталог моноподов для селфи</h1>
 				<div class="container">
 					<a href="index.html" class="header-logo">
 						<img src="#" width="0" height="0" alt="DEVICE">
@@ -73,10 +74,23 @@
 					</ul>
 				</div>
 				<div class="catalog">
-					<aside> class="goods-sort">
+					<aside class="goods-sort">
+						<h2>Фильтр:</h2>
 						<form class="goods-choise" action="#" method="post">
 							<div class="aside-price">
-
+								<span class="choice-name">Стоимость</span>
+								<div class="range-controls">
+									<div class="scale">
+										<div class="min-toggle">
+											<div class="toggle"></div>
+											<span class="min-cost">от 0</span>
+										</div>
+										<div class="max-toggle">
+											<div class="toggle"></div>
+											<span class="max-cost">до 5000</span>
+										</div>
+									</div>
+								</div>	
 							</div>
 							<div class="aside-color">
 								<input type="checkbox" name="black" value="black" id="check-1" checked>
@@ -100,6 +114,28 @@
 						</form>		        		
 					</aside>
 					<section class="goods-list">
+						<div class="goods-list-sort">
+							<h2>Сортировка:</h2>
+							<ul>
+								<li>
+									<a class="goods-list-sort-link current">По цене</a>
+								</li>
+								<li>
+									<a class="goods-list-sort-link">По типу</a>
+								</li>
+								<li>
+									<a class="goods-list-sort-link">По популярности</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a class="goods-list-sort-link_up"></a>
+								</li>
+								<li>
+									<a class="goods-list-sort-link_down active"></a>
+								</li>
+							</ul>
+						</div>
 						<div class="good">
 							<div class="good-picture">
 								<img src="#" width="0" height="0" alt="Любительская селфи-палка">
@@ -145,6 +181,15 @@
 							</div>
 						</div>
 					</section>
+					<div class="paginator">
+						<a class="prev" href="#">Назад</a>
+						<a class="current">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a class="next" href="#">Вперёд</a>
+					</div>
 				</div>
 			</main>
 
