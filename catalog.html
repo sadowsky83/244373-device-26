@@ -81,7 +81,7 @@
 								<legend>Диапазон цены товара:</legend>
 								<div class="aside-price">
 									<span class="choice-name">Стоимость</span>
-									<div class="range-controls">
+									<div class="range-controls" aria-hidden="true">
 										<div class="scale">
 											<div class="min-toggle">
 												<div class="toggle"></div>
@@ -92,6 +92,12 @@
 												<span class="max-cost">до 5000</span>
 											</div>
 										</div>
+									</div>
+									<div class="visually-hidden">
+										<label for="min-cost">Минимальная цена товара</label>
+										<input type="number" name="min-cost" min="0" value="0">
+										<label for="max-cost">Мaксимальная цена товара</label>
+										<input type="number" name="max-cost" max="5000" value="5000">
 									</div>	
 								</div>
 							</fieldset>
@@ -129,21 +135,21 @@
 							<h2>Сортировка:</h2>
 							<ul>
 								<li>
-									<a class="goods-list-sort-link current" href="#">По цене</a>
+									<a class="goods-list-sort-link current" href="#" aria-label="Сортировка по цене">По цене</a>
 								</li>
 								<li>
-									<a class="goods-list-sort-link" href="#">По типу</a>
+									<a class="goods-list-sort-link" href="#" aria-label="Сортировка по типу">По типу</a>
 								</li>
 								<li>
-									<a class="goods-list-sort-link" href="#">По популярности</a>
+									<a class="goods-list-sort-link" href="#" aria-label="Сортировка по популярности">По популярности</a>
 								</li>
 							</ul>
 							<ul>
 								<li>
-									<a class="goods-list-sort-link_up" href="#" aria-label="Вверх"></a>
+									<a class="goods-list-sort-link_up" href="#" aria-label="Сортиирвать по возрастанию"></a>
 								</li>
 								<li>
-									<a class="goods-list-sort-link_down active" href="#" aria-label="Вниз"></a>
+									<a class="goods-list-sort-link_down active" href="#" aria-label="Сортировать по убыванию"></a>
 								</li>
 							</ul>
 						</div>
@@ -193,13 +199,14 @@
 						</div>
 					</section>
 					<div class="paginator">
-						<a class="prev" href="#">Назад</a>
-						<a class="current">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">5</a>
-						<a class="next" href="#">Вперёд</a>
+						<h2 class="visually-hidden">Страницы списка выбранных товаров</h2>
+						<a class="prev" href="#" aria-label="Предыдущая страница">Назад</a>
+						<a class="current" aria-label="Страница">1</a>
+						<a href="#" aria-label="Страница">2</a>
+						<a href="#" aria-label="Страница">3</a>
+						<a href="#" aria-label="Страница">4</a>
+						<a href="#" aria-label="Страница">5</a>
+						<a class="next" href="#"  aria-label="Следующая страница">Вперёд</a>
 					</div>
 				</div>
 			</main>
@@ -247,7 +254,7 @@
 							<a class="social-btn social-btn-tw" href="#" aria-label="Device в twitter">Твиттер</a>
 						</li>
 					</ul>
-					<a class="html-academy-logo" href="https://htmlacademy.ru/"  aria-label="htmlacademy">
+					<a class="html-academy-logo" href="https://htmlacademy.ru/" aria-label="htmlacademy">
 						<img src="img/logo-html_27x35.svg" width="27" height="35" alt="htmlacademy">
 					</a>
 				</div> 			
