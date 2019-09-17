@@ -14,8 +14,8 @@
 			<header class="main-header">
 				<h1 class="visually-hidden">Онлайн магазин электронных гаджетов DEVICE. Каталог моноподов для селфи</h1>
 				<div class="container">
-					<a href="index.html" class="header-logo">
-						<img src="img/logo_163x35.svg" width="163" height="35" alt="DEVICE">
+					<a href="index.html" class="header-logo" aria-label="Ссылка на главную страницу логотип">
+						<img src="img/logo_163x35.svg" width="163" height="35" alt="Логотип DEVICE">
 					</a>
 					<div class="user-block">
 						<div class="user-block-search">
@@ -77,40 +77,51 @@
 					<aside class="goods-sort">
 						<h2>Фильтр:</h2>
 						<form class="goods-choise" action="#" method="post">
-							<div class="aside-price">
-								<span class="choice-name">Стоимость</span>
-								<div class="range-controls">
-									<div class="scale">
-										<div class="min-toggle">
-											<div class="toggle"></div>
-											<span class="min-cost">от 0</span>
+							<fieldset>
+								<legend>Диапазон цены товара:</legend>
+								<div class="aside-price">
+									<span class="choice-name">Стоимость</span>
+									<div class="range-controls">
+										<div class="scale">
+											<div class="min-toggle">
+												<div class="toggle"></div>
+												<span class="min-cost">от 0</span>
+											</div>
+											<div class="max-toggle">
+												<div class="toggle"></div>
+												<span class="max-cost">до 5000</span>
+											</div>
 										</div>
-										<div class="max-toggle">
-											<div class="toggle"></div>
-											<span class="max-cost">до 5000</span>
-										</div>
-									</div>
-								</div>	
-							</div>
-							<div class="aside-color">
-								<input type="checkbox" name="black" value="black" id="check-1" checked>
-								<label for="check-1">Черный</label>
-								<input type="checkbox" name="white" value="white" id="check-2">
-								<label for="check-2">Белый</label>
-								<input type="checkbox" name="blue" value="blue" id="check-3" checked>
-								<label for="check-3">Синий</label>
-								<input type="checkbox" name="red" value="red" id="check-4" checked>
-								<label for="check-4">Красный</label>
-								<input type="checkbox" name="pink" value="pink" id="check-5">
-								<label for="check-5">Розовый</label>
-							</div>
-							<div class="aside-bluetooth">
-								<input type="radio" name="bluetooth" value="yes" id="yes" checked>
-								<label for="yes">Есть</label>
-								<input type="radio" name="bluetooth" value="no" id="no">
-								<label for="no">Нет</label>
-							</div>
-							<button class="button goods-choise-btn" type="submit" value="submit">ПОКАЗАТЬ</button> 
+									</div>	
+								</div>
+							</fieldset>
+							<fieldset>
+								<legend>Цвет товара:</legend>
+								<div class="aside-color">
+									<span class="choice-name">Цвет</span>
+									<input type="checkbox" name="color" value="Черный" id="black-colored" checked>
+									<label for="check-1">Черный</label>
+									<input type="checkbox" name="color" value="Белый" id="white-colored">
+									<label for="check-2">Белый</label>
+									<input type="checkbox" name="color" value="Синий" id="blue-colored" checked>
+									<label for="check-3">Синий</label>
+									<input type="checkbox" name="color" value="Красный" id="red-colored" checked>
+									<label for="check-4">Красный</label>
+									<input type="checkbox" name="color" value="Розовый" id="pink-colored">
+									<label for="check-5">Розовый</label>
+								</div>
+							</fieldset>
+							<fieldset>
+								<legend>Наличие bluetooth:</legend>
+								<div class="aside-bluetooth">
+									<span class="choice-name">Bluetooth</span>
+									<input type="radio" name="bluetooth" value="Есть" id="yes" checked>
+									<label for="yes">Есть</label>
+									<input type="radio" name="bluetooth" value="Нет" id="no">
+									<label for="no">Нет</label>
+								</div>
+								<button class="button goods-choise-btn" type="submit" value="submit">ПОКАЗАТЬ</button> 
+							</fieldset>
 						</form>		        		
 					</aside>
 					<section class="goods-list">
@@ -118,21 +129,21 @@
 							<h2>Сортировка:</h2>
 							<ul>
 								<li>
-									<a class="goods-list-sort-link current">По цене</a>
+									<a class="goods-list-sort-link current" href="#">По цене</a>
 								</li>
 								<li>
-									<a class="goods-list-sort-link">По типу</a>
+									<a class="goods-list-sort-link" href="#">По типу</a>
 								</li>
 								<li>
-									<a class="goods-list-sort-link">По популярности</a>
+									<a class="goods-list-sort-link" href="#">По популярности</a>
 								</li>
 							</ul>
 							<ul>
 								<li>
-									<a class="goods-list-sort-link_up" aria-label="Вверх"></a>
+									<a class="goods-list-sort-link_up" href="#" aria-label="Вверх"></a>
 								</li>
 								<li>
-									<a class="goods-list-sort-link_down active" aria-label="Вниз"></a>
+									<a class="goods-list-sort-link_down active" href="#" aria-label="Вниз"></a>
 								</li>
 							</ul>
 						</div>
@@ -227,19 +238,19 @@
 				<div class="footer-social">					
 					<ul class="footer-social">
 						<li class="footer-social-facebook">
-							<a class="social-btn social-btn-fb" href="#">Фейсбук</a>    
-						</li>     
-						<li class="footer-social-instagramm">     
-							<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+							<a class="social-btn social-btn-fb" href="#" aria-label="Device в facebook">Фейсбук</a>
+						</li>
+						<li class="footer-social-instagram">
+							<a class="social-btn social-btn-inst" href="#" aria-label="Device в instagram">Инстаграм</a>
 						</li>
 						<li class="footer-social-twitter">
-							<a class="social-btn social-btn-tw" href="#">Твиттер</a>
+							<a class="social-btn social-btn-tw" href="#" aria-label="Device в twitter">Твиттер</a>
 						</li>
 					</ul>
-					<a class="html-academy-logo" href="https://htmlacademy.ru/">
+					<a class="html-academy-logo" href="https://htmlacademy.ru/"  aria-label="htmlacademy">
 						<img src="img/logo-html_27x35.svg" width="27" height="35" alt="htmlacademy">
 					</a>
-				</div>    			
+				</div> 			
 			</footer>
 
 		</div>
