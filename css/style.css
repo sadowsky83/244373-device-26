@@ -1,33 +1,28 @@
 @font-face { 
 	font-family: "Gilroy bold";
-	src: url(fonts/gilroyextrabold.woff) format("woff"),   
-		 url(fonts/gilroyextrabold.woff2) format("woff2"); 	
+	src: url(../fonts/gilroyextrabold.woff) format("woff"),   
+		 url(../fonts/gilroyextrabold.woff2) format("woff2"); 	
 }
 
 @font-face { 
 	font-family: "Gilroy light";
-	src: url(fonts/gilroyextralight.woff) format("woff"),  
-		 url(fonts/gilroyextralight.woff2) format("woff2"); 
+	src: url(../fonts/gilroyextralight.woff) format("woff"),  
+		 url(../fonts/gilroyextralight.woff2) format("woff2"); 
 }
 
 @font-face { 
 	font-family: "Open Sans";
-	src: url(fonts/opensans.woff) format("woff"), 
-		 url(fonts/opensans.woff2) format("woff2");
+	src: url(../fonts/opensans.woff) format("woff"), 
+		 url(../fonts/opensans.woff2) format("woff2");
 }
 
 @font-face { 
 	font-family: "Open Sans light";
-	src: url(fonts/opensanslight.woff) format("woff"),
-		 url(fonts/opensanslight.woff2) format("woff2");
+	src: url(../fonts/opensanslight.woff) format("woff"),
+		 url(../fonts/opensanslight.woff2) format("woff2");
 }
 
-body {
-	font-family: "Open Sans","Arial",sans-serif;
-	font-size: 18px;
-	line-height: 30px;
-	font-weight: 800;
-	color: #000000;
+body {	
 	background-color: #FFFFFF;
 }
 
@@ -35,7 +30,7 @@ a {
 	text-decoration: none;
 }
 
-h1 {
+.header-tier1 {
 	font-family: "Gilroy bold","Arial",sans-serif;
 	font-size: 47px;
 	font-weight: 800;
@@ -136,11 +131,17 @@ h1 {
 	opacity: 1;
 }
 
-.search-form input:focus ~ .user-block-search {
+.search-form input:focus {
 	border-bottom: solid 1px #000000;
 }
 
-.main-menu, .main-goods-list, .footer-menu, .footer-social, .breadcrumbs ul, .catalog-menu ul {
+.main-menu,
+.main-goods-list,
+.footer-menu,
+.footer-social,
+.breadcrumbs ul,
+.catalog-menu ul,
+.about-us ul {
 	list-style: none;
 }
 
@@ -170,7 +171,8 @@ h1 {
 	border: none;
 }
 
-.button:hover, .services-slider-control:hover {
+.button:hover,
+.services-slider-control:hover {
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.0) 0%, #F0C62A 0%, #F0C62A 100%, rgba(0, 0, 0, 0.0) 100%);
 }
 
@@ -191,7 +193,8 @@ h1 {
 	color: #000000;
 }
 
-.goods-slider-descr p, .services-slider-item p, .information p {
+.goods-slider-descr p,
+.services-slider-item p {
 	font-family: "Open Sans","Arial",sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -203,7 +206,9 @@ h1 {
 	color: #464646;
 }
 
-.unit1, .unit2, .unit3 {
+.unit1,
+.unit2,
+.unit3 {
 	font-family: "Gilroy light","Arial",sans-serif;
 	font-size: 36px;
 	font-weight: 300;
@@ -215,7 +220,9 @@ h1 {
 	color: #000000;
 }
 
-.prop1, .prop2, .prop3 {
+.prop1,
+.prop2,
+.prop3 {
 	font-family: "Open Sans","Arial",sans-serif;
 	font-size: 13px;
 	font-weight: 300;
@@ -243,15 +250,15 @@ h1 {
 	color: #000000;
 }
 
-.main-goods-item-link:hover .main-goods-item-img {
+.main-goods-item-link:hover ~ .main-goods-item-img {
 	background-color: #F0C62A;
 }
 
-.main-goods-item-link:active .main-goods-item-img img {
+.main-goods-item-link:active ~ .main-goods-item-img img {
 	opacity: 0.3;	
 }
 
-.main-goods-item-link:active .main-goods-item-img p {
+.main-goods-item-link:active ~ .main-goods-item-img p {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -268,7 +275,7 @@ h1 {
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.0) 40%, #F0C62A 40%, #F0C62A 60%, rgba(0, 0, 0, 0.0) 60%);
 }
 
-.services-slider-item h3, .information h3 {
+.header-tier3 {
 	font-family: "Gilroy bold","Arial",sans-serif;
 	font-size: 47px;
 	font-weight: 800;
@@ -308,7 +315,7 @@ h1 {
 	filter: grayscale(0%);
 }
 
-.about-us ul li{
+.about-us li{
 	font-family: "Gilroy bold","Arial",sans-serif;
 	font-size: 16px;
 	font-weight: 800;
@@ -316,7 +323,7 @@ h1 {
 	color: #000000;
 }
 
-.information p {
+.information-paragraph {
 	font-family: "Open Sans light","Arial",sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -336,11 +343,11 @@ footer {
 	fill: #FFC700;
 }
 
-.fade:hover { 
+.fade-link:hover { 
 	opacity: 0.6;
 }
 
-.fade:active { 
+.fade-link:active { 
 	opacity: 0.3;
 }
 
