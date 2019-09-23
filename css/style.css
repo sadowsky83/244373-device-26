@@ -1,32 +1,29 @@
 @font-face { 
 	font-family: "Gilroy bold";
 	src: url(fonts/gilroyextrabold.woff) format("woff"),   
-	url(fonts/gilroyextrabold.woff2) format("woff2"); 	
+		 url(fonts/gilroyextrabold.woff2) format("woff2"); 	
 }
 
 @font-face { 
 	font-family: "Gilroy light";
 	src: url(fonts/gilroyextralight.woff) format("woff"),  
-	url(fonts/gilroyextralight.woff2) format("woff2"); 
+		 url(fonts/gilroyextralight.woff2) format("woff2"); 
 }
 
 @font-face { 
 	font-family: "Open Sans";
 	src: url(fonts/opensans.woff) format("woff"), 
-	url(fonts/opensans.woff2) format("woff2");
+		 url(fonts/opensans.woff2) format("woff2");
 }
 
 @font-face { 
 	font-family: "Open Sans light";
 	src: url(fonts/opensanslight.woff) format("woff"),
-	url(fonts/opensanslight.woff2) format("woff2");
+		 url(fonts/opensanslight.woff2) format("woff2");
 }
 
 body {
-	margin: 0;
-	padding: 0;
-
-	font-family: "Gilroy bold","Open Sans","Arial",sans-serif;
+	font-family: "Open Sans","Arial",sans-serif;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 800;
@@ -50,7 +47,7 @@ h1 {
 	color: #000000;
 }
 
-.visuallyhidden {
+.visually-hidden {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -97,7 +94,7 @@ h1 {
 }
 
 .btn-search {
-	display: none;
+	opacity: 0;
 	font-family: "Open Sans","Arial",sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -132,15 +129,14 @@ h1 {
 }
 
 .search-form input:focus {	
+	opacity: 1;	
+}
+
+.search-form input:focus ~ .btn-search {
 	opacity: 1;
-	outline: none;	
 }
 
-.search-form input:focus .btn-search {
-	display: inline;
-}
-
-.search-form input:focus .user-block-search {
+.search-form input:focus ~ .user-block-search {
 	border-bottom: solid 1px #000000;
 }
 
@@ -160,7 +156,7 @@ h1 {
 	color: #000000;
 }
 
-.button, .services-slider-control {	
+.button {	
 	font-family: "Gilroy bold","Arial",sans-serif;
 	font-size: 18px;
 	font-weight: 800;
@@ -269,6 +265,7 @@ h1 {
 	letter-spacing: 3.6px;
 	text-align: center;
 	color: #000000;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.0) 40%, #F0C62A 40%, #F0C62A 60%, rgba(0, 0, 0, 0.0) 60%);
 }
 
 .services-slider-item h3, .information h3 {
@@ -283,8 +280,21 @@ h1 {
 	color: #000000;
 }
 
-.services-slider_input:checked .services-slider-control {
+.services1-radio:checked ~ .services1-label {
 	color: #F3DF83;
+	background: none;
+	background-color: #000000;
+}
+
+.services2-radio:checked ~ .services2-label {
+	color: #F3DF83;
+	background: none;
+	background-color: #000000;
+}
+
+.services3-radio:checked ~ .services3-label {
+	color: #F3DF83;
+	background: none;
 	background-color: #000000;
 }
 
@@ -298,12 +308,24 @@ h1 {
 	filter: grayscale(0%);
 }
 
-.aboutus ul li{
+.about-us ul li{
 	font-family: "Gilroy bold","Arial",sans-serif;
 	font-size: 16px;
 	font-weight: 800;
 	line-height: 2.5;
 	color: #000000;
+}
+
+.information p {
+	font-family: "Open Sans light","Arial",sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2;
+	letter-spacing: normal;
+	text-align: left;
+	color: #464646;
 }
 
 footer {
@@ -314,11 +336,11 @@ footer {
 	fill: #FFC700;
 }
 
-.vanish:hover { 
+.fade:hover { 
 	opacity: 0.6;
 }
 
-.vanish:active { 
+.fade:active { 
 	opacity: 0.3;
 }
 
@@ -397,11 +419,11 @@ footer {
 	opacity: 0.5;
 }
 
-.close:hover {
+.close-button:hover {
 	opacity: 1;
 }
 
-.close:active {
+.close-button:active {
 	opacity: 0.3;
 }
 
@@ -568,7 +590,7 @@ footer {
 }
 
 .hide-link {
-	display: none;
+	opacity: 0;
 }
 
 .good-price {
@@ -613,5 +635,5 @@ footer {
 }
 
 .good:hover .hide-link{
-	display: inline;
+	opacity: 1;
 }
