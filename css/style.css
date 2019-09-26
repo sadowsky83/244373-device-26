@@ -139,6 +139,9 @@ a {
 .main-goods-list,
 .footer-menu,
 .footer-social,
+.breadcrumbs-list,
+.sort-list,
+.sort-direction,
 .breadcrumbs ul,
 .catalog-menu ul,
 .about-us ul {
@@ -516,7 +519,8 @@ a {
 	color: rgba(255, 255, 255, 0.7);
 }
 
-.breadcrumbs a {
+.breadcrumbs-link,
+.sort-link {
 	font-family: "Open Sans light","Arial",sans-serif;
 	font-size: 14px;
 	font-weight: 300;
@@ -525,34 +529,40 @@ a {
 	line-height: 1.71;
 	letter-spacing: 0.14px;
 	text-align: left;
-	color: rgba(0, 0, 0, 0.3);
+	color: #000000;
+	opacity: 0.3;
 }
 
-.breadcrumbs a:hover {
-	color: rgba(0, 0, 0, 0.6);
+.breadcrumbs-link:hover {
+	opacity: 0.6;
 }
 
-.breadcrumbs a:active {
-	color: rgba(0, 0, 0, 0.1);
+.breadcrumbs-link:active {
+	opacity: 0.1;
 }
 
 .goods-sort {
 	background-color: #ECECEC;
 }
 
-.goods-sort h2 {
+.sort-link-active {
+	opacity: 1;
+}
+
+.header-tier2 {
 	font-family: "Gilroy bold","Arial",sans-serif;
 	font-size: 16px;
 	font-weight: 800;
 	font-style: normal;
 	font-stretch: normal;
+	text-transform: uppercase;
 	line-height: 1.5;
 	letter-spacing: 3.2px;
 	text-align: left;
 	color: #000000;
 }
 
-.goods-choise span {
+.choice-name {
 	font-family: "Gilroy bold","Arial",sans-serif;
 	font-size: 18px;
 	font-weight: 800;
@@ -562,6 +572,20 @@ a {
 	letter-spacing: 0.18px;
 	text-align: left;
 	color: #000000;
+}
+
+.min-cost, 
+.max-cost {	
+  font-family: "Gilroy light","Arial",sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  opacity: 0.2;
 }
 
 .goods-choise label {
@@ -647,5 +671,52 @@ a {
 }
 
 .good:hover .hide-link{
+	opacity: 1;
+}
+
+.paginator {
+	background-color: #ECECEC;
+}
+
+.paginator-link {
+	font-family: "Gilroy bold","Arial",sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 3.2px;
+	text-align: left;
+	color: #000000;
+	opacity: 0.3;
+}
+
+.paginator-prev,
+.paginator-next {
+	background-color: #ECECEC;
+	opacity: 1;
+}
+
+.paginator-prev:hover,
+.paginator-next:hover {
+	background-color: #DADADA;
+}
+
+.paginator-prev:active,
+.paginator-next:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-link-current,
+.paginator-link-current
+ {
+	opacity: 1;
+}
+
+.appearance-link:hover {
+	opacity: 0.6;
+}
+
+.appearance-link:active {
 	opacity: 1;
 }
