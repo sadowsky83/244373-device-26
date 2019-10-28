@@ -32,7 +32,33 @@
 					<nav class="main-navigation">
 						<ul class="main-menu">
 							<li class="main-menu-catalog">
-								<a class="menu-link fade-link" href="#">КАТАЛОГ ТОВАРОВ</a>								
+								<a class="menu-link fade-link" href="#">КАТАЛОГ ТОВАРОВ</a>	
+								<div class="catalog-menu">
+									<ul class="catalog-menu-column1">
+										<li>
+											<a class="catalog-menu-link fade-link" href="#">Виртуальная реальность</a>
+										</li>
+										<li>
+											<a class="catalog-menu-link fade-link" href="catalog.html">Моноподы для селфи</a>
+										</li>
+										<li>
+											<a class="catalog-menu-link fade-link" href="#">Экшн-камеры</a>
+										</li>
+									</ul>
+									<ul class="catalog-menu-column2">
+										<li>
+											<a class="catalog-menu-link fade-link" href="#">Фитнес-браслеты</a>
+										</li>
+										<li>
+											<a class="catalog-menu-link fade-link" href="#">Умные часы</a>
+										</li>
+									</ul>
+									<ul class="catalog-menu-column3">
+										<li>
+											<a class="catalog-menu-link fade-link" href="#">Квадрокоптеры</a>
+										</li>
+									</ul>
+								</div>							
 							</li>
 							<li class="main-menu-delivery">
 								<a class="menu-link fade-link" href="#">ДОСТАВКА</a>
@@ -95,7 +121,7 @@
 									</table>
 								</div>
 							</li>
-							<li class="goods-slider-item">
+							<li class="goods-slider-item visually-hidden">
 								<div class="goods-slider-item-img">
 									<img src="img/slider-2_345x485.png" width="345" height="485" alt="Умные часы">
 								</div>
@@ -119,7 +145,7 @@
 									</table>
 								</div>
 							</li>
-							<li class="goods-slider-item">
+							<li class="goods-slider-item visually-hidden">
 								<div class="goods-slider-item-img">
 									<img src="img/slider-3_526x334.png" width="526" height="334" alt="Квадрокоптер">
 								</div>
@@ -224,11 +250,11 @@
 								<h3 class="header-tier3">Доставка</h3>
 								<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 							</div>
-							<div class="services-slider-item services-slider-item_warranty" id="warranty">
+							<div class="services-slider-item services-slider-item_warranty visually-hidden" id="warranty">
 								<h3 class="header-tier3">Гарантия</h3>
 								<p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 							</div>
-							<div class="services-slider-item services-slider-item_credit" id="credit">
+							<div class="services-slider-item services-slider-item_credit visually-hidden" id="credit">
 								<h3 class="header-tier3">Кредит</h3>
 								<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 							</div>
@@ -317,15 +343,15 @@
 						<div class="yellow-brick"></div>
 						<div class="footer-social">
 							<ul class="footer-social-list">
-									<li class="footer-social-facebook">
-										<a class="social-btn social-btn-fb footer-link" href="#" aria-label="Device в facebook"></a>
-									</li>
-									<li class="footer-social-instagram">
-										<a class="social-btn social-btn-inst footer-link" href="#" aria-label="Device в instagram"></a>
-									</li>
-									<li class="footer-social-twitter">
-										<a class="social-btn social-btn-tw footer-link" href="#" aria-label="Device в twitter"></a>
-									</li>
+								<li class="footer-social-facebook">
+									<a class="social-btn social-btn-fb footer-link" href="#" aria-label="Device в facebook"></a>
+								</li>
+								<li class="footer-social-instagram">
+									<a class="social-btn social-btn-inst footer-link" href="#" aria-label="Device в instagram"></a>
+								</li>
+								<li class="footer-social-twitter">
+									<a class="social-btn social-btn-tw footer-link" href="#" aria-label="Device в twitter"></a>
+								</li>
 							</ul>
 							</div>
 							<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-academy-logo" title="HTML Academy"><img src="img/logo-html_27x35.svg" width="27" height="34" alt="Логотип html academy"></a>
@@ -333,57 +359,31 @@
 					</div>
 				</footer>
 		</div>
-		<div class="modal-feedback">
-			<h2 class="visually-hidden">Форма обратной связи</h2>
-			<button class="modal-feedback-close close-button" type="button" aria-label="Закрыть форму обратной связи">Закрыть</button>			
-			<form class="feedback-form" action="#" method="post">
-				<div class="feedback-wrapper">
-					<div class="feedback-name-block wrapper-column">
-						<label class="feedback-label" for="feedback-name">Ваше имя:</label>
-						<input class="feedback-input" name="feedback-name" id="feedback-name" type="text" placeholder="Имя Фамилия" required>
-					</div>
-					<div class="feedback-email-block wrapper-column">
-						<label class="feedback-label" for="feedback-email">Ваш e-mail:</label>
-						<input class="feedback-input" name="feedback-email" id="feedback-email" type="email" placeholder="email@example.com" required>
-					</div>
-				</div>				
-				<div class="feedback-text-block wrapper-column">
-					<label class="feedback-label" for="feedback-text">Текста письма:</label>
-					<textarea class="feedback-textarea" name="feedback-text" id="feedback-text" placeholder="В свободной форме" required></textarea>
+	<div class="modal-feedback visually-hidden">
+		<h2 class="visually-hidden">Форма обратной связи</h2>
+		<button class="modal-feedback-close close-button" type="button" aria-label="Закрыть форму обратной связи">Закрыть</button>			
+		<form class="feedback-form" action="#" method="post">
+			<div class="feedback-wrapper">
+				<div class="feedback-name-block wrapper-column">
+					<label class="feedback-label" for="feedback-name">Ваше имя:</label>
+					<input class="feedback-input" name="feedback-name" id="feedback-name" type="text" placeholder="Имя Фамилия" required>
 				</div>
-				<button class="feedback-send button" type="submit">Отправить</button>
-			</form>
-		</div>
-		<div class="modal-map">
-			<h2 class="visually-hidden">Карта</h2>					
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931614256!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1572014300123!5m2!1sru!2sru" width="960" height="560" style="border:0;" allowfullscreen=""></iframe>		
-			<button class="modal-map-close close-button" type="button" aria-label="Закрыть карту">Закрыть</button>
-		</div>	
-	<div class="catalog-menu">
-		<ul class="catalog-menu-column1">
-			<li>
-				<a class="catalog-menu-link fade-link" href="#">Виртуальная реальность</a>
-			</li>
-			<li>
-				<a class="catalog-menu-link fade-link" href="catalog.html">Моноподы для селфи</a>
-			</li>
-			<li>
-				<a class="catalog-menu-link fade-link" href="#">Экшн-камеры</a>
-			</li>
-		</ul>
-		<ul class="catalog-menu-column2">
-			<li>
-				<a class="catalog-menu-link fade-link" href="#">Фитнес-браслеты</a>
-			</li>
-			<li>
-				<a class="catalog-menu-link fade-link" href="#">Умные часы</a>
-			</li>
-		</ul>
-		<ul class="catalog-menu-column3">
-			<li>
-				<a class="catalog-menu-link fade-link" href="#">Квадрокоптеры</a>
-			</li>
-		</ul>
+				<div class="feedback-email-block wrapper-column">
+					<label class="feedback-label" for="feedback-email">Ваш e-mail:</label>
+					<input class="feedback-input" name="feedback-email" id="feedback-email" type="email" placeholder="email@example.com" required>
+				</div>
+			</div>				
+			<div class="feedback-text-block wrapper-column">
+				<label class="feedback-label" for="feedback-text">Текста письма:</label>
+				<textarea class="feedback-textarea" name="feedback-text" id="feedback-text" placeholder="В свободной форме" required></textarea>
+			</div>
+			<button class="feedback-send button" type="submit">Отправить</button>
+		</form>
 	</div>
+	<div class="modal-map visually-hidden">
+		<h2 class="visually-hidden">Карта</h2>					
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931614256!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1572014300123!5m2!1sru!2sru" width="960" height="560" style="border:0;" allowfullscreen=""></iframe>		
+		<button class="modal-map-close close-button" type="button" aria-label="Закрыть карту">Закрыть</button>
+	</div>		
 </body>
 </html>
